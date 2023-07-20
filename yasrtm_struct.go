@@ -5,7 +5,7 @@ import (
 )
 
 type yang_buat struct {
-	ID                  primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	ID                  primitive.ObjectID `bson:"_id,omitempty" json:"id,omitempty"`
 	Nama_yangbuat       string             `bson:"nama_yangbuat,omitempty" json:"nama_yangbuat,omitempty"`
 	Email_yangbuat      string             `bson:"email_yangbuat,omitempty" json:"email_yangbuat,omitempty"`
 	Katasandi_yangbuat  string             `bson:"katasandi_yangbuat,omitempty" json:"katasandi_yangbuat,omitempty"`
