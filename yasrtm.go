@@ -64,3 +64,14 @@ func DeleteDataPengaturan(Email_yangbuat string, db *mongo.Database, col string)
 	fmt.Println("Succes Delete data")
 	return data
 }
+
+func DeleteDataListFromKataSandi(KataSandi_yangbuat string, db *mongo.Database, col string) (data yang_buat) {
+	ktsnd := db.Collection(col)
+	filter := bson.M{"katasandiyangbuat": KataSandi_yangbuat}
+	err, _ := ktsnd.DeleteOne(context.TODO(), filter)
+	if err != nil {
+		fmt.Printf("DeleteDataKataSandiygb : %v\n", err)
+	}
+	fmt.Println("Succes Delete data")
+	return data
+}
