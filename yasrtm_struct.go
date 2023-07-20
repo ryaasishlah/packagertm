@@ -1,6 +1,8 @@
 package packagertm
 
-import "go.mongodb.org/mongo-driver/bson/primitive"
+import (
+	"go.mongodb.org/mongo-driver/bson/primitive"
+)
 
 type yang_buat struct {
 	ID                  primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
